@@ -1,11 +1,17 @@
-source C:\Program Files (x86)\Vim\_vimrc
-
-imap <F12> <ESC>:w<CR>:!mingw32-make<CR>
+source $VIMRUNTIME\..\_vimrc
 
 set tabstop=4
 set number
 set colorcolumn=80
 
 syntax on
-colorscheme pablo
+filetype on
+colorscheme darkblue
+
+imap <F12> <ESC>:w<CR>:!mingw32-make<CR>
+
+noremap <c-t> :tabf<space>
+noremap <c-w> ZZ
+inoremap <c-t> <ESC>:tabf<space>
+inoremap <c-w> <ESC>ZZ
 
