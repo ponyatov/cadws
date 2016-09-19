@@ -17,3 +17,13 @@ noremap <c-w> ZZ
 inoremap <c-t> <ESC>:tabf<space>
 inoremap <c-w> <ESC>ZZ
 
+au BufNewFile,BufRead *.cpp set filetype=cpp
+au BufNewFile,BufRead *.c set filetype=cpp
+au BufNewFile,BufRead *.hpp set filetype=cpp
+au BufNewFile,BufRead *.h set filetype=cpp
+au BufNewFile,BufRead *.ypp set filetype=yacc
+au BufNewFile,BufRead *.y set filetype=yacc
+au BufNewFile,BufRead *.lpp set filetype=lex
+au BufNewFile,BufRead *.l set filetype=log
+au BufNewFile,BufRead *.log set filetype=config
+au BufNewFile,BufRead *.log set autoread
