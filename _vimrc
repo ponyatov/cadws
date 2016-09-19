@@ -3,12 +3,14 @@ source $VIMRUNTIME\..\_vimrc
 set tabstop=4
 set number
 set colorcolumn=80
+set columns=85 lines=35
 
 syntax on
 filetype on
 colorscheme darkblue
 
 imap <F12> <ESC>:w<CR>:!mingw32-make<CR>
+nnoremap <F12> :!mingw32-make<CR>
 
 noremap <c-t> :tabf<space>
 noremap <c-w> ZZ
